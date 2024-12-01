@@ -44,135 +44,44 @@ Tu modelo debe ser capaz de responder estas preguntas y ofrecer predicciones pre
 
 Este proyecto está dividido en varias etapas las cuales son: 
 
-1. **Exploración de los datos**: Debes analizar las características disponibles y tomar las primeras decisiones clave:
+1. **1-Eda-Pre.ipynb**: Eda, preprocesado.
 
-    - **Limpieza de datos**: Busca y maneja valores nulos, duplicados o inconsistencias que puedan afectar la calidad de tu análisis.
+2. **2-Modelos.ipynb**: Creacion de modelos.
 
-    - **Entendimiento de las variables**: Identifica las variables relevantes, sus tipos y posibles relaciones entre ellas. Por ejemplo, ¿qué variables parecen estar relacionadas con la decisión de quedarse o irse?
+3. **3-Pred.ipynb**: Test prediccion del modelo seleccionado.
 
-    - **Correlaciones y tendencias**: Usa herramientas estadísticas básicas para identificar correlaciones significativas. Esto te ayudará a entender qué factores tienen mayor impacto.
+## Conclusiones - Mejor Modelo: **XGBoost**
 
+Entrenamiento (train):
 
+-   Accuracy, Precision, Recall, F1: 0.91
 
+-   Kappa: 0.83
 
-2. **Análisis Exploratorio de Datos (EDA)**: Debes profundizar en los datos para descubrir patrones y tendencias importantes. Esto incluye:
+-   AUC: 0.96
 
-    - **Visualización de datos**: Crea gráficos como histogramas, boxplots y gráficos de dispersión para entender mejor la distribución de las variables y sus relaciones.
+Prueba (test):
 
-    - **Impacto de las variables**: Examina cómo factores como la satisfacción laboral, las horas trabajadas o el nivel de desempeño están relacionados con la retención.
+-   Accuracy, Precision, Recall, F1: 0.89-0.90
 
-    - **Detección de sesgos**: Asegúrate de que no haya sesgos en los datos que puedan influir en los resultados del modelo.
+-   Kappa: 0.79
 
+-   AUC: 0.95
 
+XGBoost da un resultado parecido Gradient Boosting, por temas de rendimiento nos quedamos con XGBoost.
 
-3. **Preparación del Modelo**: Antes de construir el modelo, debes preparar los datos adecuadamente. Este paso incluye:
+#### Propuestas de Mejora:
+   - visualizacion streamlit.
+  
+## Construido con 🛠️
 
-    - **División de datos**: Divide el conjunto de datos en conjuntos de entrenamiento (training) y prueba (test) para evaluar el modelo de manera justa.
+* [Pyhton](https://www.python.org/) - Lenguaje utilizado
+* [Numpy](https://numpy.org/doc/stable/) - Numpy
+* [seaborn](https://seaborn.pydata.org/tutorial.html) - Seaborn
+* [matplotlib](https://matplotlib.org/stable/users/index) - matplotlib
+* [pandas](https://pandas.pydata.org/docs/) - pandas
+* [Visual Studio Code](https://code.visualstudio.com/) - IDE desarrollo
+  
+## Autores ✒️
 
-    - **Preprocesamiento**:
-
-        - Normaliza o estandariza las variables si es necesario (por ejemplo, escalando variables como salarios o horas trabajadas).
-
-        - Convierte variables categóricas en un formato utilizable, como codificación one-hot.
-
-        - **Balanceo de clases**: Si las categorías "se queda" y "se va" están desequilibradas, considera técnicas como sobremuestreo o     submuestreo.
-
-
-4. **Construcción del Modelo**: Es hora de construir y evaluar diferentes algoritmos de machine learning. Aquí deberás:
-
-    - **Probar múltiples algoritmos**: Implementa al menos dos algoritmos de clasificación, como árboles de decisión, regresión logística o bosques aleatorios.
-
-    - **Evaluar el desempeño**: Usa métricas como:
-        - **Precisión**: ¿Qué tan bien clasifica el modelo?
-
-        - **F1-score**: ¿Qué tan equilibrado es entre precisión y sensibilidad?
-
-        - **Matriz de confusión**: Analiza los verdaderos positivos, verdaderos negativos, falsos positivos y falsos negativos.
-
-        - etc. 
-
-    - **Optimización del modelo**: Ajusta hiperparámetros para mejorar el desempeño, utilizando herramientas como GridSearchCV.
-
-
-5. **Conclusiones**: La etapa final consiste en analizar los resultados obtenidos y proponer estrategias prácticas. Esto incluye:
-
-    - **Resumen de hallazgos**: ¿Cuáles son los factores más relevantes que afectan la retención de empleados? ¿Qué variables tienen mayor peso en las predicciones del modelo?
-
-    - **Recomendaciones**: Basándote en el análisis y el modelo, sugiere acciones que la empresa podría tomar para mejorar la retención.
-
-    - Por ejemplo, ¿se deben ajustar las políticas de horarios flexibles? ¿O tal vez invertir más en programas de bienestar?
-
-    - **Evaluación del proyecto**: Reflexiona sobre los puntos fuertes y débiles de tu modelo y cómo podría mejorarse.
-
-
-## Como Entregar el Proyecto
-
-La entrega del proyecto se realizará a través de una **issue en GitHub**, trabajando en un repositorio propio en tu cuenta personal. Los pasos que deberás seguir para hacer la entrega del proyecto son:
-
-
-- **Crear un nuevo repositorio en tu cuenta de GitHub:**
-
-   - Crea un nuevo repositorio llamado `Proyecto8-NombreProyecto`. Este nombre es obligatorio, no podremos llamarlo de otra forma. 
-
-   - Configuralo como público. 
-
-
-- **Desarrolla el proyecto:**
-
-   - Implementa el código para la resolución del problema.
-
-   - Recuerda hacer commits regulares mientras avanzas en el desarrollo:
-
-     ```bash
-     git add .
-     git commit -m "Descripción del avance"
-     git push
-     ```
-
-
-- **Crear una issue en el repositorio original del curso:**
-
-   - Ve al repositorio original del curso y dirígete a la pestaña de **Issues**.
-
-- **Abrir una nueva issue para tu entrega:**
-
-   - Haz clic en **New Issue** y llena los siguientes campos:
-
-     - **Título:** Usa el formato "Entrega Proyecto: ProyectoClasificacion - [Tu Nombre]".
-
-     - **Descripción:** En la descripción, incluye:
-
-       - Una breve explicación de tu proyecto.
-
-       - Instrucciones para ejecutar tu código (si aplica).
-
-       - Un enlace a tu repositorio personal donde está alojado el proyecto.
-
-
-## 🚀 Entrega del Proyecto 🚀
-
-**Fecha y hora límite:**
-
-🗓️ **Lunes a las 9:00 AM.**
-
-
-**Nota importante:**
-
-⚠️ **Todos los proyectos que sean entregados o modificados después de la hora límite (lunes a las 9:00 AM) se considerarán como no entregados.** Por favor, asegúrate de completar y enviar tu trabajo a tiempo para evitar problemas.
-
-
-# 🎤 Presentación de Proyectos 🎤
-
-El lunes tendremos las **presentaciones de los proyectos**. La dinámica será la siguiente:
-
-- De forma **aleatoria**, seleccionaremos entre **3 y 5 alumnos** para presentar su proyecto.
-
-- Cada alumno tendrá **5 minutos** para explicar su proyecto y hacer una demo en vivo. Durante este tiempo podrán mostrar cómo funciona su juego y resaltar las características principales.
-
-**Detalles importantes:**
-
-- Es importante que lleguéis puntuales, ya que comenzaremos las presentaciones de inmediato.
-
-- Asegúrate de que tu código esté listo y funcional para la demo.
-
-- Todos debemos estar preparados para presentar, ya que la selección será completamente aleatoria.
+* **Santiago Rodriguez** - [santiagorodriguez-dev](https://github.com/santiagorodriguez-dev)

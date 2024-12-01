@@ -62,6 +62,13 @@ Este proyecto está dividido en varias etapas las cuales son:
 <div style="text-align: center;">
   <img src="https://github.com/santiagorodriguez-dev/Proyecto8-Clasificacion/blob/main/images/03.png" alt="logo" />
 </div>
+<br>
+<div style="text-align: center;">
+  <img src="https://github.com/santiagorodriguez-dev/Proyecto8-Clasificacion/blob/main/images/d1.png" alt="logo" />
+</div>
+<div style="text-align: center;">
+  <img src="https://github.com/santiagorodriguez-dev/Proyecto8-Clasificacion/blob/main/images/d2.png" alt="logo" />
+</div>
 
 Entrenamiento (train):
 

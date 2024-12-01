@@ -1,10 +1,9 @@
 
 <div style="text-align: center;">
-  <img src="https://github.com/Hack-io-Data/Imagenes/blob/main/01-LogosHackio/logo_naranja@4x.png?raw=true" alt="logo" />
+  <img src="https://github.com/santiagorodriguez-dev/Proyecto8-Clasificacion/blob/main/images/logo.png" alt="logo" />
 </div>
 
 # Proyecto: Predicción de Retención de Empleados 🏢
-
 
 ## Introducción
 
@@ -51,6 +50,18 @@ Este proyecto está dividido en varias etapas las cuales son:
 3. **3-Pred.ipynb**: Test prediccion del modelo seleccionado.
 
 ## Conclusiones - Mejor Modelo: **XGBoost**
+
+<div style="text-align: center;">
+  <img src="https://github.com/santiagorodriguez-dev/Proyecto8-Clasificacion/blob/main/images/01.png" alt="logo" />
+</div>
+<br>
+<div style="text-align: center;">
+  <img src="https://github.com/santiagorodriguez-dev/Proyecto8-Clasificacion/blob/main/images/02.png" alt="logo" />
+</div>
+<br>
+<div style="text-align: center;">
+  <img src="https://github.com/santiagorodriguez-dev/Proyecto8-Clasificacion/blob/main/images/03.png" alt="logo" />
+</div>
 
 Entrenamiento (train):
 

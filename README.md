@@ -98,6 +98,7 @@ XGBoost da un resultado parecido Gradient Boosting, por temas de rendimiento nos
 * [seaborn](https://seaborn.pydata.org/tutorial.html) - Seaborn
 * [matplotlib](https://matplotlib.org/stable/users/index) - matplotlib
 * [pandas](https://pandas.pydata.org/docs/) - pandas
+* [scikit-learn](https://scikit-learn.org/stable/user_guide.html) - scikit-learn
 * [Visual Studio Code](https://code.visualstudio.com/) - IDE desarrollo
   
 ## Autores ✒️
